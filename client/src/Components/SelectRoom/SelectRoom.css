@@ -1,0 +1,48 @@
+/* BlueprintRoomBooking.css */
+.blueprint-container {
+
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .floor-map {
+    border: 2px solid #ccc;
+    background: #fff;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .room {
+    cursor: pointer;
+    stroke: #333;
+    stroke-width: 1;
+  }
+  
+  .room.vacant {
+    fill: #55efc4;
+  }
+  
+  .room.partial {
+    fill: #ffeaa7;
+  }
+  
+  .room.full {
+    fill: #fab1a0;
+  }
+  
+  .label {
+    font-size: 10px;
+    fill: #2d3436;
+    pointer-events: none;
+  }
+  
+  select {
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  #bookingPanel {
+    margin-top: 20px;
+  }
+  

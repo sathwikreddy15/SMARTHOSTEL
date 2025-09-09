@@ -1,0 +1,100 @@
+.leave-approval-container {
+    padding: 20px;
+   
+  }
+  
+  .leave-approval-header {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .leave-approval-loading {
+    color: #555;
+  }
+  
+  .leave-approval-no-requests {
+    color: #555;
+  }
+  
+  .leave-approval-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  /* Default 1 card per row */
+    gap: 20px;
+  }
+  
+  @media (min-width: 600px) {
+    .leave-approval-grid {
+      grid-template-columns: repeat(2, 1fr);  /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .leave-approval-grid {
+      grid-template-columns: repeat(3, 1fr);  /* 3 cards per row on large screens */
+    }
+  }
+  
+  .leave-approval-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    color: #333;
+  }
+  
+  .leave-approval-student-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .leave-approval-details {
+    margin: 5px 0;
+  }
+  
+  .leave-approval-details span {
+    font-weight: 600;
+  }
+  
+  .leave-approval-status {
+    margin: 5px 0;
+  }
+  
+  .leave-approval-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .leave-approval-button-approve {
+    background-color: #48bb78;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .leave-approval-button-reject {
+    background-color: #f56565;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .leave-approval-button-approve:hover {
+    background-color: #38a169;
+  }
+  
+  .leave-approval-button-reject:hover {
+    background-color: #e53e3e;
+  }
+  

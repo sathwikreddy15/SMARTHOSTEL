@@ -1,0 +1,138 @@
+/* Container for the entire page */
+.leave-container {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px; /* Added padding on the right to balance the layout */
+
+  flex-direction: column;
+  width: 100%; /* Ensure it takes full width */
+  max-width: 1200px; /* Maximum width to avoid stretching too far on large screens */
+  margin: 0 auto; /* Center the container */
+  margin-bottom: 200px;
+  padding-bottom: 50px;
+}
+
+/* Flexbox for form and history side by side */
+.leave-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Space between form and history */
+  width: 100%;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Form box styling */
+.leave-form-box {
+  background: #fff;
+  padding: 30px;
+  padding-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make the form take full available width */
+  max-width: 600px; /* Set a maximum width for better readability */
+  margin-bottom: 30px;
+}
+
+/* Title of the form */
+.leave-form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input styling inside the form */
+.leave-form-box input,
+.leave-form-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Label styling */
+.leave-form-box label {
+  font-weight: 500;
+}
+
+/* Submit button styling */
+.leave-form-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4e54c8;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.leave-form-box button:hover {
+  background-color: #3c41a1;
+}
+
+/* Leave history section */
+.leave-history {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px; /* Same max-width as the form box */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Table for displaying leave history */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+
+.history-table td {
+  font-size: 14px;
+}
+
+/* Styling for empty history message */
+.leave-history p {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .leave-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .leave-content {
+    flex-direction: column; /* Stack form and history on smaller screens */
+    gap: 20px; /* Reduced gap on small screens */
+  }
+
+  .leave-form-box,
+  .leave-history {
+    width: 100%;
+    max-width: 100%; /* Remove max-width for mobile view */
+  }
+}

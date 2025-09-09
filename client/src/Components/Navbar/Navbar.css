@@ -1,0 +1,55 @@
+.navbar {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  margin-bottom: 0px;
+  background: #f0f0f0; 
+  position: sticky;
+  top: 0;
+  z-index: 6;
+}
+.nav-heading {
+  background-image: linear-gradient(to right, #ed7c0b, #efab46);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px; 
+  font-weight: 800; 
+  padding: 10px; 
+  margin-left: 100px;
+}
+.nav-logo {
+  width: 53px;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-profile {
+  width: 40px; 
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.388); 
+}
+
+.signout-btn {
+  padding: 6px 10px; 
+  border-radius: 20px; 
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #454444; 
+  cursor: pointer;
+  background-color: #ffffff; 
+  color: #454444; 
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.signout-btn:hover {
+  background-color: #454444; 
+  color: #ffffff; 
+  border-color: #454444; 
+}

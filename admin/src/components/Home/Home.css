@@ -1,0 +1,55 @@
+.admin-home-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .admin-home-header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dashboard-grid-reverse-triangle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+  
+  .full-width {
+    grid-column: span 2;
+  }
+  
+  .dashboard-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+  
+  .dashboard-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-card.pending {
+    background-color: #ff8c00;
+  }
+  
+  .dashboard-card.complaints {
+    background-color: #e74c3c;
+  }
+  
+  .dashboard-card.hostel {
+    background-color: #27ae60;
+  }
+  
+  .dashboard-card.bunked {
+    background-color: #8e44ad;
+  }
+  
+  .dashboard-card:hover {
+    transform: scale(1.03);
+  }
+  

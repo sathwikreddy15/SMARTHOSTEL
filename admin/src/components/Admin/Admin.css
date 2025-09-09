@@ -1,0 +1,17 @@
+.admin-main {
+  width: 100%;
+  min-height: 88vh;
+  display: flex;
+  gap: 60px;
+  /* align-items: stretch; */
+}
+.admin-main-blur{
+  display: flex;
+  gap:60px;
+  filter: blur(120px);
+}
+@media screen and (max-width:820px){
+  .admin-main{
+    flex-direction: column;
+  }
+}
